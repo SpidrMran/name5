@@ -1,0 +1,94 @@
+
+-- Instances:
+
+local GUI = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Gradient = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local FFPB = Instance.new("TextButton")
+local FNBA = Instance.new("TextButton")
+local KAH = Instance.new("TextButton")
+
+--Properties:
+
+GUI.Name = "GUI"
+GUI.Parent = game.CoreGui
+GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = GUI
+main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+main.BackgroundTransparency = 0.200
+main.BorderColor3 = Color3.fromRGB(207, 35, 101)
+main.BorderSizePixel = 2
+main.Position = UDim2.new(0.678336978, 0, 0.234999999, 0)
+main.Size = UDim2.new(0.301239967, 0, 0.728333354, 0)
+main.Active = true
+main.Draggable = true
+
+Gradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(154, 154, 154)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient.Rotation = -90
+Gradient.Name = "Gradient"
+Gradient.Parent = main
+
+Title.Name = "Title"
+Title.Parent = main
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(1, 0, 0.068649888, 0)
+Title.Font = Enum.Font.Arcade
+Title.Text = "SpidrMrans Hack List"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 36.000
+Title.TextWrapped = true
+
+FFPB.Name = "FF-PB"
+FFPB.Parent = main
+FFPB.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+FFPB.BorderColor3 = Color3.fromRGB(207, 35, 101)
+FFPB.BorderSizePixel = 2
+FFPB.Position = UDim2.new(0.0435835123, 0, 0.164759755, 0)
+FFPB.Size = UDim2.new(0.418886185, 0, 0.0823798627, 0)
+FFPB.Font = Enum.Font.SciFi
+FFPB.Text = "Funky Friday Project Bishop"
+FFPB.TextColor3 = Color3.fromRGB(255, 255, 255)
+FFPB.TextScaled = true
+FFPB.TextSize = 10.000
+FFPB.TextWrapped = true
+FFPB.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZoinkyPoinkie/FunkyFridayDevTools/main/Un-Obfuscated",true))()
+end)
+
+FNBA.Name = "FNB-A"
+FNBA.Parent = main
+FNBA.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+FNBA.BorderColor3 = Color3.fromRGB(207, 35, 101)
+FNBA.BorderSizePixel = 2
+FNBA.Position = UDim2.new(0.513317168, 0, 0.164759755, 0)
+FNBA.Size = UDim2.new(0.418886185, 0, 0.0823798627, 0)
+FNBA.Font = Enum.Font.SciFi
+FNBA.Text = "Friday Night Bloxxin Autoplayer"
+FNBA.TextColor3 = Color3.fromRGB(255, 255, 255)
+FNBA.TextScaled = true
+FNBA.TextSize = 10.000
+FNBA.TextWrapped = true
+FNBA.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/o5u3/Friday-Night-Bloxxin-Autoplayer/main/Script.lua"))()
+end)
+
+KAH.Name = "KAH"
+KAH.Parent = main
+KAH.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+KAH.BorderColor3 = Color3.fromRGB(207, 35, 101)
+KAH.BorderSizePixel = 2
+KAH.Position = UDim2.new(0.0435835123, 0, 0.320366144, 0)
+KAH.Size = UDim2.new(0.418886185, 0, 0.0823798627, 0)
+KAH.Font = Enum.Font.SciFi
+KAH.Text = "Khols Admin House"
+KAH.TextColor3 = Color3.fromRGB(255, 255, 255)
+KAH.TextScaled = true
+KAH.TextSize = 10.000
+KAH.TextWrapped = true
+KAH.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpidrMran/name4/main/source"))()
+end)
